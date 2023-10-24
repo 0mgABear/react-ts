@@ -1,7 +1,9 @@
-import { Child } from "./Child";
+import { ChildAsFC } from "./Child";
 
 const Parent = () => {
-  return <Child />;
+  return (
+    <ChildAsFC color="blue" onClick={() => console.log("clicked")}></ChildAsFC>
+  );
 };
 
 export default Parent;
